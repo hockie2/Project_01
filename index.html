@@ -1,0 +1,34 @@
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Whack-a-Mole!!</title>
+</head>
+<body>
+    <div id="title">Whack-a-Mole!!</div>
+    <div class="wrapper" id="mouse">
+        <div id="left">
+            <div id="countdown_wrapper"><div id="countdown">30</div></div>
+            <div id="scoreboard_wrapper">Score:<div id="scoreboard">0</div></div>
+            <div id="start-reset"><button>START</button></div>
+        </div>
+
+        <div id="right">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <img src="img/mole-disappear.png" class="mole" id="data-id">
+            <div id="win"><p>Game Over!</p></div>
+        </div>
+
+        <!-- end wrapper -->
+    </div>
+    <audio id="myAudio">
+  <source src="img/hammer.mp3" type="audio/mp3">
+  Your browser does not support the audio element.
+    </audio>
+    <script src="main2.js"></script>
+</body>
+</html>
