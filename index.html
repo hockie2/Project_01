@@ -8,8 +8,11 @@
     <div id="title">Whack-a-Mole!!</div>
     <div class="wrapper" id="mouse">
         <div id="left">
-            <div id="countdown_wrapper"><div id="countdown">30</div></div>
-            <div id="scoreboard_wrapper">Score:<div id="scoreboard">0</div></div>
+            <div id="countdown_wrapper"><div id="countdownText">30</div></div>
+            <div id="scoreboard_wrapper">
+                <div id="highscorewrapper"><div id="highScoreText">High Score:&nbsp;</div><div id="highscoreNum" >0</div></div>
+                <div id="scorebottomwrapper">Score:<div id="scoreboard">0</div></div>
+            </div>
             <div id="start-reset"><button>START</button></div>
         </div>
 
@@ -20,15 +23,13 @@
             <img src="img/mole-disappear.png" class="mole" id="data-id">
             <img src="img/mole-disappear.png" class="mole" id="data-id">
             <img src="img/mole-disappear.png" class="mole" id="data-id">
-            <div id="win"><p>Game Over!</p></div>
+            <div id="win"><p>Start!</p></div>
         </div>
 
         <!-- end wrapper -->
     </div>
-    <audio id="myAudio">
-  <source src="img/hammer.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-    </audio>
-    <script src="main2.js"></script>
+    <audio id="audioHit"><source src="img/hammer.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+    <audio id="audioClick"><source src="img/click.mp3" type="audio/mp3">Your browser does not support the audio element.</audio>
+    <script src="main.js"></script>
 </body>
 </html>

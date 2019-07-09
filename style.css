@@ -6,12 +6,11 @@ html {
 
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Permanent Marker', cursive;
     /*background-color: #dcfaf8;*/
     background-image: url('img/pattern.jpg');
     background-repeat: repeat;
+    overflow: hidden;
 }
 
 #title{
@@ -38,15 +37,16 @@ body {
     background-image:url('img/background2.jpg');
     background-size: cover;
     display: flex;
+    box-shadow: 5px 10px 8px #888888;
     /*flex-direction: row;*/
     /*align-items: flex-start;*/
 }
 
 #left{
     width:20%;
-    /*border: 1px red solid;*/
+    /*border: 3px red solid;*/
      display: flex;
-     justify-content: center;
+     justify-content:space-around;
      flex-direction: column;
      align-items: center;
 
@@ -65,33 +65,76 @@ body {
 }
 
 #countdown_wrapper{
-    width: 100%;
-    height: 30%;
-    /*border: 1px red solid;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 96%;
+    height: 27%;
+    /*border:3px orange solid;*/
+    transform: rotate(-10deg);
+    font-size: 50px;
 }
 
-#countdown{
-    width: 90%;
-    height: 84%;
+#countdownText{
+    width: 100%;
+    height: 100%;
     background-image: url("img/board.png");
     background-size: cover;
     /*box-sizing: border-box;*/
     color: brown;
-    font-size: 50px;
+    font-size: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    /*border: 3px solid green;*/
 }
 
 #scoreboard_wrapper{
     width: 100%;
     height: 20%;
-    /*border: 1px orange solid;*/
+    /*border: 6px green solid;*/
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#highscorewrapper{
+    width: 100%;
+    height: 20%;
+    /*border: 2px purple solid;*/
+    color: white;
+    text-shadow: 0 0 5px #000000;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: row;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#highscoreText{
+    width:80%;
+    /*height: 50%;*/
+    /*border: 3px blue solid;*/
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+}
+
+#highscoreNum{
+    width:10%;
+    font-size: 20px;
+    /*border: 3px solid green;*/
+    display: flex;
+    justify-content: center;
+
+}
+
+#scorebottomwrapper{
+    width: 100%;
+    height: 80%;
+    /*border: 2px red solid;*/
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: white;
@@ -99,20 +142,19 @@ body {
 }
 
 #scoreboard{
-    width: 47%;
+    width: 38%;
     height: 100%;
     background-image: url("img/leaves2.png");
     background-size: cover;
     font-size: 50px;
+    /*border: 4px solid orange;*/
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-
+    align-items: center;
 }
 
 #start-reset{
-    width: 100%;
+    width: 80%;
     height:25%;
     /*border: 1px blue solid;*/
     display: flex;
@@ -121,7 +163,7 @@ body {
 }
 
 button {
-    width: 70%;
+    width: 100%;
     height: 40%;
     font-size: 30px;
     text-align: center;
@@ -143,7 +185,7 @@ button {
     border-radius:6px;
     border:1px solid #ffaa22;
     display:inline-block;
-    cursor:pointer;
+    cursor:url("img/hammer_small.png"), auto;
     /*font-size:15px;*/
     font-weight:bold;
     padding:6px auto;
@@ -163,16 +205,17 @@ button:hover {
 button:active {
     position:relative;
     top:1px;
+    cursor:url("img/hammer_small_onclick.png"), auto;
 }
 
 #win {
-    font-size: 55px;
+    font-size: 70px;
     /*border: 1px red solid;*/
     width:100%;
     line-height: 1;
     display: block;
     position: absolute;
-    margin: 150px auto;
+    margin: 36% auto;
     text-align: center;
     color: white;
     text-shadow: 0 0 10px #000000;
@@ -194,4 +237,121 @@ button:active {
 #mouse:active{
     /*cursor:url('img/hammer.cur'),auto;*/
     cursor: url("img/hammer_onclick.png"), auto;
+}
+
+
+@media only screen and (min-width: 320px ) and (max-device-width: 414px){
+
+    body{
+        background-image: none;
+    }
+
+    #title{
+        /*display:;*/
+        position: absolute;
+        font-size: 80px;
+        z-index: 1;
+    }
+
+    .wrapper{
+        width: 100%;
+        height:100%;
+        box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0;
+        /*box-sizing: none;*/
+        /*border: 4px solid red;*/
+        }
+
+    #left{
+        width:100%;
+        height:20%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        order:2;
+        /*border: 4px solid red;*/
+    }
+
+    #right{
+        width:100%;
+        height:80%;
+        /*display:flex;*/
+        /*justify-content: flex-start;*/
+        /*flex-wrap: wrap;*/
+        /*align-content: space-between;*/
+        /*margin-top: 10%;*/
+        /*align-items: center;*/
+        /*order:1;*/
+        /*border: 4px solid red;*/
+        /*box-sizing: none;*/
+    }
+
+    #right img{
+        width:45%;
+        margin: 0 auto;
+        /*border: 1px solid red;*/
+    }
+
+    #start-reset{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        /*justify-content: center;*/
+        /*order:1;*/
+    }
+
+    button{
+        width: 80%;
+        height: 80%;
+        font-size: 70px;
+        /*display: flex;*/
+        /*align-self: flex-end;*/
+        /*order:3;*/
+    }
+
+    #countdown_wrapper {
+        width:85%;
+        height: 85%;
+        display: flex;
+        /*order: 1;*/
+        transform: none;
+        /*position: relative;*/
+        font-size: 100px;
+
+    }
+
+    #countdownText{
+        /*font-size: 100%;*/
+
+    }
+    #scoreboard_wrapper {
+        width: 80%;
+        height: 100%;
+        font-size: 50px;
+        display: flex;
+        order: 1;
+        font-size: 40px;
+    }
+    #scoreboard{
+        width: 100%;
+        font-size: 100px;
+
+    }
+    #highscoretext{
+        font-size:30px;
+    }
+
+    #highscoreNum{
+        font-size: 60px;
+    }
+
+    #win{
+        font-size: 200px;
+        margin-top: 60%;
+    }
 }
