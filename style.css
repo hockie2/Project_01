@@ -2,6 +2,7 @@
 
 html {
   box-sizing: border-box;
+  height:100%;
 }
 
 
@@ -11,6 +12,9 @@ body {
     background-image: url('img/pattern.jpg');
     background-repeat: repeat;
     overflow: hidden;
+    height:100%;
+    margin: 0;
+    /*padding:0;*/
 }
 
 #title{
@@ -244,6 +248,8 @@ button:active {
 
     body{
         background-image: none;
+        /*padding: 0;*/
+
     }
 
     #title{
@@ -262,8 +268,10 @@ button:active {
         align-items: center;
         justify-content: center;
         border-radius: 0;
+        margin: 0;
+        padding: 0;
         /*box-sizing: none;*/
-        /*border: 4px solid red;*/
+        border:0;
         }
 
     #left{
