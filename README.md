@@ -1,6 +1,7 @@
 # Project_01 - Whack-a-Mole!! Game
 
-Created a whack a mole game. Using mostly setAttribute and setTimeout codes
+Created a whack a mole game. Using mostly setAttribute and setTimeout codes.
+Hit as many moles as you can within 30 seconds. Try to beat your own highscore!
 
 **Website version** <br />
 ![alt text](https://dl.dropboxusercontent.com/s/9jlimff3eokdkmz/website.jpg?dl=0)
