@@ -1,6 +1,6 @@
 # Project_01 - Whack-a-Mole!! Game
 
-Create a whack a mole game. Using mostly setAttribute and setTimeout codes
+Created a whack a mole game. Using mostly setAttribute and setTimeout codes
 
 **Website version** <br />
 ![alt text](https://dl.dropboxusercontent.com/s/9jlimff3eokdkmz/website.jpg?dl=0)
